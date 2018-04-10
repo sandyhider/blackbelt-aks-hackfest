@@ -34,7 +34,7 @@ spec:
       imagePullSecrets:
         - name: acr-secret
       containers:
-      - image: <login server>/azureworkshop/rating-api:v1
+      - image: hiderrt1trainingacr.azurecr.io/azureworkshop/rating-api:v1
         name:  heroes-api-cntnr
         resources:
           requests:
@@ -42,7 +42,7 @@ spec:
             memory: "55M"
         env:
         - name:  MONGODB_URI
-          value:  mongodb://mongodb:27017/webratings
+          value:  mongodb://hiderrt1-heroes-acdb:izTNOuL9uXX4vhOcxYPKHCCfypWe5ei7gsX9Oe6aw0kJGUufAFAREwzAENxxJafVkoumXv0Cjo5jGhx00K1RqA==@hiderrt1-heroes-acdb.documents.azure.com:10255/heroratings?ssl=true 
         ports:
         - containerPort:  3000
           name:  heroes-api
@@ -85,7 +85,7 @@ spec:
       imagePullSecrets:
         - name: acr-secret
       containers:
-      - image: <login server>/azureworkshop/rating-web:v1
+      - image: hiderrt1trainingacr.azurecr.io/azureworkshop/rating-web:v1
         name:  heroes-web-cntnr
         resources:
           requests:
