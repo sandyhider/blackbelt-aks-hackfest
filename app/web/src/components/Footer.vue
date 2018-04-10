@@ -14,7 +14,7 @@
       <div class="col-lg-6">
       </div>
       <div class="col-lg-12 credits">
-        Sandy Hider
+        Sandy Hider the II
       </div>
       <div class="col-lg-6">
       </div>
